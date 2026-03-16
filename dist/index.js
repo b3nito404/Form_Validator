@@ -1,29 +1,22 @@
 "use strict";
-/*ici on creer l'interface Options
-interface Options {
-    material: string;
-    backlight: boolean;
-}
-
-//creation d'une Mapped list pour les Options afin d'eviter les repetitions
-type ReadOnly<T> = {readonly [k in keyof T]: T[k]};
-type Optional<T> = {[k in keyof T]?: T[k]};
-type Nullable<T> ={[k in keyof T] : T[k] | null};
-
-
-type ReadOnlyOptions = ReadOnly<Options>;
-type OptionalOptions = Optional<Options>;
-type NullableOptions = Nullable<Options>;
-
-//using mapped list
- const option1: ReadOnlyOptions = {
-    material: 'plastic',
-    backlight: false,
- }*/
-Object.defineProperty(exports, "__esModule", { value: true });
-const Person = {
-    name: true,
-    age: false
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
-console.log(Person);
+Object.defineProperty(exports, "__esModule", { value: true });
+// src/index.ts
+__exportStar(require("./guards/primitives"), exports);
+__exportStar(require("./types/schema.types"), exports);
+__exportStar(require("./schemas/user.schema"), exports);
+__exportStar(require("./validators/validateObject"), exports);
 //# sourceMappingURL=index.js.map
