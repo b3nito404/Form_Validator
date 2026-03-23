@@ -1,5 +1,3 @@
-// src/index.ts
-export * from "./guards/primitives";
-export * from "./types/schema.types";
-export * from "./schemas/user.schema";
-export * from "./validators/validateObject";
+export * from "./core/schema";
+export * from "./core/primitives";
+export * from "./core/object";
